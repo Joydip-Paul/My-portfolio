@@ -1,0 +1,92 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+    .login a {
+        font-size: 18px;
+    }
+    .portfolio-menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio-menu li {
+        font-size: 12px;
+        width: 50%;
+    }
+    .project-content h4 {
+        font-size: 18px;
+    }
+    .project-content small{
+        font-size: 12px;
+    }
+    .project-content a{
+        font-size: 12px;
+    }
+    .about-content h2 {
+        font-size: 25px;
+    }
+    .about-content span {
+        font-size: 16px;
+    }
+    .progress p {
+        font-size: 12px;
+    }
+    .progress p span{
+        font-size: 12px;
+    }
+    .about-content button {
+        font-size: 16px;
+    }
+    .section-title h4 {
+        font-size: 30px;
+    }
+    .section-title h4 {
+        font-size: 30px;
+    }
+
+    .banner-contnet {
+        position: static;
+        top: 25%;
+        line-height: 20px;
+    }
+    .banner-contnet h4 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .banner-contnet h6 {
+        font-size: 30px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .banner-contnet p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .banner-contnet button {
+        font-size: 12px;
+        margin-left: 70px;
+    }
+}
