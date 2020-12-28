@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;500;600;800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -30,9 +32,10 @@ body{
     text-transform: uppercase;
     position: relative;
     padding-bottom: 12px;
-    color: #fff;
+    color: var(--theme-color);
 }
-/* .section-title h4:before {
+
+.section-title h4:before {
     position: absolute;
     content: "";
     width: 60px;
@@ -40,13 +43,14 @@ body{
     bottom: 0;
     left: 50%;
     margin-left: -30px;
-} */
+}
+
 .section-title h4::after {
 	position: absolute;
 	content: "";
 	width: 60px;
 	height: 2px;
-	background-color: #ffffff;
+	background-color: var(--theme-color);
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
@@ -62,6 +66,7 @@ body{
 }
 .header-area{
     background-color: var(--theme-color);
+    background: #242736;
     color: #fff;
     position: fixed;
 	z-index: 99;
@@ -84,7 +89,7 @@ body{
     background-color: var(--theme-color);
 }
 .image-section{
-    background-image: url('/img/jishu.png');
+    background-image: url('../img/jishu.png');
     height: 500px;
     width: 100%;
     background-color: #323546;
@@ -99,7 +104,9 @@ body{
 	color: #fff;
 	font-size: 80px;
 	font-weight: 700;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    /* font-family: 'Pacifico', cursive;
+    font-family: 'Raleway', sans-serif; */
 }
 .banner-contnet h6 {
 	color: #fff;
@@ -185,11 +192,11 @@ body{
       align-items: center;
       position: relative;
       display: flex;
-      height: 35px;
+      height: 30px;
       width: 100%;
   }
   .pro-value{
-      animation: load 5s normal forwards;
+      animation: load 2s normal forwards;
       border-radius: 50px;
       background-color: var(--theme-color);
       height: 65px;
@@ -205,7 +212,7 @@ body{
 }
 
   .pro-value2{
-    animation: load2 5s normal forwards;
+    animation: load2 2s normal forwards;
     border-radius: 50px;
     background-color: var(--theme-color);
     height: 65px;
@@ -220,7 +227,7 @@ body{
     }
 }
 .pro-value3{
-    animation: load3 5s normal forwards;
+    animation: load3 2s normal forwards;
     border-radius: 50px;
     background-color: var(--theme-color);
     height: 65px;
@@ -235,7 +242,7 @@ body{
     }
 }
 .pro-value4{
-    animation: load4 5s normal forwards;
+    animation: load4 2s normal forwards;
     border-radius: 50px;
     background-color: var(--theme-color);
     height: 65px;
@@ -253,6 +260,109 @@ body{
       color: #fff;
       padding: 12px;
   }
+  .about-content button{
+      font-size: 20px;
+  }
 
+
+
+
+  .work-area{
+      background-color: #fff;
+  }
+  .portfolio-menu {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .portfolio-menu li {
+    display: block;
+    border: 1px solid var(--theme-color);
+    padding: 10px 30px;
+    cursor:pointer;
+    border-radius: 10px;
+    margin: 2px;
+  }
+  .portfolio-menu li.active {
+	background-color: var(--theme-color);
+	color: #fff;
+	border: 0;
+}
+  .single-portfolio {
+    overflow:hidden;
+    position:relative;
+    margin-bottom:30px;
+    border: 1px solid rgb(173, 173, 173);
+    padding: 20px;
+  }
+  .single-portfolio img {
+    width: 100%;
+    vertical-align: middle;
+  }
   
-
+.portfolio-overlay {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 55%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    visibility: hidden;
+    transition: .3s;
+    opacity:0;
+    cursor: pointer;
+  }
+  .portfolio-overlay:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 55%;
+    left: 0;
+    top: 0;
+    /* background-color: #333; */
+    opacity: .80;
+    z-index: -1;
+  }
+  .portfolio-overlay a{
+      text-decoration: none;
+      background-color: var(--theme-color);
+      color: #fff;
+      padding: 5px 10px;
+  }
+  .portfolio-overlay h4 {
+    text-transform: capitalize;
+    font-size: 25px;
+  }
+  .single-portfolio:hover .portfolio-overlay {
+    top: 0;
+    visibility: visible;
+    opacity:1;
+  }
+  
+.project-content p {
+    line-height: 1px;
+    margin-top: 10px;
+    font-weight: 100;
+  }
+  .project-content h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+  .project-content a {
+    background: #000;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .project-content small{
+      text-transform: capitalize;
+      font-size: 14px;
+      font-weight: 300;
+  }
