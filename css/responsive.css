@@ -81,6 +81,15 @@
     .banner-contnet button {
         font-size: 12px;
         margin-left: 70px;
+        padding: 5px 10px;
+        position: relative;
+        left: 16%;
+    }
+    .image-section {
+        background-image: url('../img/jishu.png');
+        height: 350px;
+        width: 340px;
+        margin-left: 12%;
     }
 }
 
