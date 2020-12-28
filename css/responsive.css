@@ -80,16 +80,16 @@
     }
     .banner-contnet button {
         font-size: 12px;
-        margin-left: 70px;
+        margin-left: 20px;
         padding: 5px 10px;
         position: relative;
         left: 16%;
     }
     .image-section {
         background-image: url('../img/jishu.png');
-        height: 350px;
+        height: 340px;
         width: 340px;
-        margin-left: 12%;
+        margin-left: -8%;
     }
 }
 
@@ -163,5 +163,14 @@
     .banner-contnet button {
         font-size: 12px;
         margin-left: 70px;
+    }
+    .about-img {
+        height: 300px;
+        width: 90%;
+        background-size: cover;
+        margin-left: 20px;
+    }
+    .about-content button {
+        margin-left: 5px;
     }
 }
