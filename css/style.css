@@ -379,3 +379,36 @@ body{
       font-size: 14px;
       font-weight: 300;
   }
+
+
+
+
+  .contact-area{
+    background-color: #864C49;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+  }
+  .contact-form textarea {
+    height: 90px;
+  }
+  .contact-form input[type="submit"] {
+    background-color: var(--theme-color);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    border: 0;
+    text-transform: uppercase;
+  }
+
+
+  .footer-area{
+      background-color: var(--theme-color);
+  }
+  .footer-area p{
+      color: #fff;
+  }

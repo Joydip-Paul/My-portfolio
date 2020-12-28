@@ -32,7 +32,7 @@
                                 <a class="nav-link" href="#work">Work <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#contact">Contact <span class="sr-only">(current)</span></a>
                             </li>
                           </ul>
                         </div>
@@ -133,6 +133,13 @@
                             <li data-filter=".c">Portfolio-Projects</li>
                             <li data-filter=".d">Recent-Project</li>
                         </ul> 
+                        <!-- <div class="protfolio-menu text-center">
+                            <button class="btn btn bg-dark active" data-filter = "*">All</button>
+                            <button class="btn btn bg-dark" data-filter = ".a">All</button>
+                            <button class="btn btn bg-dark" data-filter = ".b">All</button>
+                            <button class="btn btn bg-dark" data-filter = ".c">All</button>
+                            <button class="btn btn bg-dark" data-filter = ".d">All</button>
+                        </div> -->
                 </div>
             </div>
             <div class="row portfolio-item">
@@ -140,7 +147,7 @@
                     <div class="single-portfolio">
                         <img src="img/work1.jpg" alt="">
                         <div class="portfolio-overlay">
-                            <a href="https://project-gorib.netlify.app/" target="_blank"><i class="fas fa-plus"></i></a>
+                            <a href="https://project-gorib.netlify.app/" target="_blank"> <span><i class="fas fa-plus"></i></span></a>
                             <!-- <h4>Project Gorib</h4>
                             <p>project short description</p> -->
                         </div>
@@ -259,26 +266,51 @@
 
         </div>
     </section>
+    <!-- Work Area End -->
 
+
+    <!-- Contact Area Start -->
+    <section class="contact-area pt-100 pb-100" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                   <div class="section-title">
+                       <h4 style="color: #fff;">Contact Me</h4>
+                       <p style="color: #fff;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, reprehenderit.</p>
+                   </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="contact-form text-center">
+                        <form action="">
+                            <input type="text" placeholder="Name">
+                            <input type="text" name="" id="" placeholder="Email">
+                            <input type="text" placeholder="Subject">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                            <input type="submit" value="submit">
+                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Area End -->
+
+    <!-- Footer Area Start -->
+    <section class="footer-area pt-100 pb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="text-center">Copyright © JoydipJD.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/isotope.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
-    <script>
-         // init Isotope
-         var $grid = $('.portfolio-item').isotope({
-        // options
-        });
-        // filter items on button click
-        $('.portfolio-menu').on( 'click', 'li', function() {
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({ filter: filterValue });
-        });
-
-        $('.portfolio-menu').on( 'click', 'li', function() {
-            $(this).addClass('active').siblings().removeClass('active');
-        });
-    </script>
+    <script src="js/app.js"></script>
 </body>
 </html>
 
