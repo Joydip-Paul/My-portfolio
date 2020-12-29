@@ -52,6 +52,8 @@
     }
     .about-content button {
         font-size: 16px;
+        padding: 5px 10px;
+        margin-left: 8px;
     }
     .section-title h4 {
         font-size: 30px;
@@ -85,11 +87,24 @@
         position: relative;
         left: 16%;
     }
+    .banner-contnet button.two {
+        padding: 4px 10px;
+        margin-left: 12px;
+        background: none;
+        color: #fff;
+        border: 2px solid #fff;
+    }
     .image-section {
-        background-image: url('../img/jishu.png');
+        background-image: url('../img/joydip.jpg');
         height: 340px;
         width: 340px;
-        margin-left: -8%;
+        margin-left: -6%;
+    }
+    .about-img {
+        background: url('../img/bal.jpg');
+        border: 5px solid #fff;
+        height: 180px;
+        width: 380px;
     }
 }
 

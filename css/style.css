@@ -165,6 +165,8 @@ body{
     height: 430px;
     width: 100%;
     background-size: cover;
+    background: url('../img/bal.jpg');
+    border: 5px solid #fff;
 }
 .about-img:before{
     position:absolute;
