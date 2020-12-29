@@ -28,7 +28,9 @@ body{
     padding-bottom: 150px;
 }
 :root{
-    --theme-color: #323546;
+    /* --theme-color: #323546; */
+    --theme-color: #222831;
+    --second-theme: #6f9eaf;
 }
 .section-title {
     text-align: center;
@@ -70,11 +72,11 @@ body{
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 22px;
 }
 .header-area{
     background-color: var(--theme-color);
-    background: #242736;
+    /* background: #242736; */
     color: #fff;
     position: fixed;
 	z-index: 99;
@@ -82,13 +84,13 @@ body{
 }
 .menu ul li a{
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
 }
 .login a{
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
 }
 
@@ -99,7 +101,7 @@ body{
     background-color: var(--theme-color);
 }
 .image-section{
-    background-image: url('../img/jishu.png');
+    background-image: url('../img/joydip.jpg');
     height: 500px;
     width: 100%;
     background-color: #323546;
@@ -136,20 +138,28 @@ body{
 }
 .banner-contnet button{
     margin-top: 20px;
-    padding: 10px 50px;
+    padding: 14px 50px;
     font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #fff;
 }
-.btn.btn-light.two {
+.banner-contnet button.two {
+    padding: 12px 50px;
     margin-left: 12px;
     background: none;
     color: #fff;
     border: 2px solid #fff;
 }
-
+.banner-contnet button.two:hover{
+    background-color: #fff;
+    color: var(--theme-color);
+}
 
 
 .About-area{
-    background-color: #864C49;
+    /* background-color: #864C49; */
+    background-color: var(--second-theme);
 }
 .about-img{
     height: 430px;
@@ -182,6 +192,14 @@ body{
     font-weight: 100;
     color: #fff;
     position: relative;
+  }
+  .about-content button{
+    margin-top: 20px;
+    padding: 10px 50px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #fff;
   }
   /* .about-content span::after {
 	position: absolute;
@@ -384,7 +402,8 @@ body{
 
 
   .contact-area{
-    background-color: #864C49;
+    /* background-color: #864C49; */
+    background-color: var(--second-theme);
   }
   .contact-form input, .contact-form textarea {
     width: 100%;
@@ -392,6 +411,7 @@ body{
     border-radius: 12px;
     padding: 5px 10px;
     margin-bottom: 15px;
+    outline: none;
   }
   .contact-form textarea {
     height: 90px;
@@ -411,4 +431,15 @@ body{
   }
   .footer-area p{
       color: #fff;
+  }
+  .footer-content p{
+      font-size: 20px;
+  }
+  .footer-content i{
+      padding: 10px;
+      font-size: 25px;
+  }
+  .footer-content i:hover{
+      color: #434c58;
+      cursor: pointer;
   }

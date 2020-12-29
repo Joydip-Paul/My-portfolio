@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Header Area Start -->
@@ -52,15 +53,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="banner-contnet">
+                    <div class="banner-contnet" data-aos="slide-right" data-aos-duration="2000">
                         <h6>Hello I, am</h6>
                         <h4>Joydip Paul</h4>
                         <p>Web Developer</p>
-                        <button class="btn btn-light">My Work</button>
-                        <button class="btn btn-light two">Hire Me</button>
+                        <button class="bttn">My Work</button>
+                        <button class="bttn two">Hire Me</button>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6" data-aos="slide-left" data-aos-duration="2000">
                     <div class="image-section">
                         <!-- <img src="img/joydip.jpg" alt=""> -->
                     </div>
@@ -81,11 +82,11 @@
                 </div> -->
             </div>
             <div class="row">
-                <div class="col-md-5 about-img" style="background: url('img/bal.jpg'); border:10px solid #fff">
+                <div class="col-md-5 about-img"  data-aos="fade-right" data-aos-duration="2000" style="background: url('img/bal.jpg'); border:10px solid #fff">
 
                 </div>
                 <div class="col-md-7">
-                    <div class="about-content">
+                    <div class="about-content" data-aos="fade-left" data-aos-duration="2000">
                         <h2>Joydip Paul</h2>
                         <span>Web Developer</span>
                         <p class="Me">This is Joydip Paul. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam iure vel sit quaerat est aspernatur odit autem alias esse aliquid nihil, cupiditate assumenda? Corporis quos aut sunt nesciunt earum exercitationem. Lorem ipsum dolor sit amet.</p>
@@ -110,8 +111,8 @@
                                 <p>JAVASCRIPT<span class="text-white float-right">50%</span></p>
                             </div>
                         </div>
-                        <button class="btn btn bg-light mt-3">Download CV</button>
-                        <button class="btn btn bg-light mt-3">Contact Me</button>
+                        <button class="bttn mt-3">Download CV</button>
+                        <button class="bttn mt-3">Contact Me</button>
                     </div>
                 </div>
             </div>
@@ -120,7 +121,7 @@
     <!-- About Area End -->
 
     <!-- Work Area Start -->
-    <section class="work-area pt-100 pb-100" id="work">
+    <section class="work-area pt-100 pb-100" id="work" data-aos="fade-up" data-aos-duration="2000">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -143,7 +144,7 @@
                         </div> -->
                 </div>
             </div>
-            <div class="row portfolio-item">
+            <div class="row portfolio-item" data-aos="fade-top" data-aos-duration="2000">
                 <div class="col-xl-4 a b">
                     <div class="single-portfolio">
                         <img src="img/work1.jpg" alt="">
@@ -275,7 +276,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                   <div class="section-title">
+                   <div class="section-title" data-aos="slide-down" data-aos-duration="1000">
                        <h4 style="color: #fff;">Contact Me</h4>
                        <p style="color: #fff;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, reprehenderit.</p>
                    </div>
@@ -283,14 +284,16 @@
             </div>
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="contact-form text-center">
-                        <form action="">
-                            <input type="text" placeholder="Name">
-                            <input type="text" name="" id="" placeholder="Email">
-                            <input type="text" placeholder="Subject">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                            <input type="submit" value="submit">
-                         </form>
+                    <div class="container">
+                        <div class="contact-form text-center" data-aos="zoom-in" data-aos-duration="2000">
+                            <form action="">
+                                <input type="text" placeholder="Name">
+                                <input type="text" name="" id="" placeholder="Email">
+                                <input type="text" placeholder="Subject">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                                <input type="submit" value="submit">
+                             </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -303,6 +306,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
+                    <div class="footer-content text-center" style="color: #fff;">
+                    <p class="text-center">Get in touch</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-instagram"></i>
+                    </div>
                     <p class="text-center">Copyright © JoydipJD.com</p>
                 </div>
             </div>
@@ -312,6 +322,10 @@
     <script src="js/isotope.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
 
