@@ -82,7 +82,7 @@
     }
     .banner-contnet button {
         font-size: 12px;
-        margin-left: 50px;
+        margin-left: 46px;
         padding: 5px 10px;
         position: relative;
         left: 16%;
@@ -100,13 +100,13 @@
     .image-section img {
         height: 260px;
         width: 260px;
-        margin-left: 16%;
+        margin-left: 14%;
         margin-top: 40px;
     }
     .about-img {
         border: 5px solid #fff;
         height: 180px;
-        width: 372px;
+        width: 362px;
         margin-left: 20px;
     }
     /* .about-img{
