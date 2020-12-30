@@ -82,7 +82,7 @@
     }
     .banner-contnet button {
         font-size: 12px;
-        margin-left: 42px;
+        margin-left: 50px;
         padding: 5px 10px;
         position: relative;
         left: 16%;
@@ -94,16 +94,19 @@
         color: #fff;
         border: 1px solid #fff;
     }
+    .image-section {
+        height: 420px;
+    }
     .image-section img {
-        height: 280px;
-        width: 280px;
-        margin-left: 3%;
+        height: 260px;
+        width: 260px;
+        margin-left: 16%;
         margin-top: 40px;
     }
     .about-img {
         border: 5px solid #fff;
         height: 180px;
-        width: 280px;
+        width: 372px;
         margin-left: 20px;
     }
     /* .about-img{
