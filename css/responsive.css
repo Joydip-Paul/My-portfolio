@@ -92,13 +92,14 @@
         margin-left: 12px;
         background: none;
         color: #fff;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
     }
-    .image-section {
-        background-image: url('../img/joydip.jpg');
+    .image-section img{
+        /* background-image: url('../img/joydip.jpg'); */
         height: 340px;
         width: 340px;
-        margin-left: -6%;
+        margin-left: 12%;
+        margin-top: 40px;
     }
     .about-img {
         background: url('../img/bal.jpg');

@@ -101,11 +101,14 @@ body{
     background-color: var(--theme-color);
 }
 .image-section{
-    background-image: url('../img/joydip.jpg');
-    height: 500px;
+    /* background-image: url('../img/banner-image.png'); */
+    height: 520px;
     width: 100%;
-    background-color: #323546;
     background-size: cover;
+}
+.image-section img{
+    height: 460px;
+    width: 480px;
 }
 .banner-contnet{
     position: absolute;
@@ -149,7 +152,7 @@ body{
     margin-left: 12px;
     background: none;
     color: #fff;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
 }
 .banner-contnet button.two:hover{
     background-color: #fff;
@@ -202,6 +205,10 @@ body{
     outline: none;
     border: none;
     background-color: #fff;
+    border-radius: 10px;
+  }
+  .about-content button:hover{
+      background-color: #f1f1f1;
   }
   /* .about-content span::after {
 	position: absolute;
@@ -231,7 +238,7 @@ body{
       width: 100%;
   }
   .pro-value{
-      animation: load 2s normal forwards;
+      animation: load 5s normal forwards;
       border-radius: 50px;
       background-color: var(--theme-color);
       height: 65px;
@@ -247,7 +254,7 @@ body{
 }
 
   .pro-value2{
-    animation: load2 2s normal forwards;
+    animation: load2 5s normal forwards;
     border-radius: 50px;
     background-color: var(--theme-color);
     height: 65px;
@@ -262,7 +269,7 @@ body{
     }
 }
 .pro-value3{
-    animation: load3 2s normal forwards;
+    animation: load3 5s normal forwards;
     border-radius: 50px;
     background-color: var(--theme-color);
     height: 65px;
@@ -277,7 +284,7 @@ body{
     }
 }
 .pro-value4{
-    animation: load4 2s normal forwards;
+    animation: load4 5s normal forwards;
     border-radius: 50px;
     background-color: var(--theme-color);
     height: 65px;
@@ -408,7 +415,7 @@ body{
     background-color: var(--second-theme);
   }
   .contact-form input, .contact-form textarea {
-    width: 100%;
+    width: 60%;
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 5px 10px;
@@ -426,7 +433,9 @@ body{
     border: 0;
     text-transform: uppercase;
   }
-
+  .contact-form input[type="submit"]:hover{
+      background-color: #10151b;
+  }
 
   .footer-area{
       background-color: var(--theme-color);
@@ -437,11 +446,12 @@ body{
   .footer-content p{
       font-size: 20px;
   }
-  .footer-content i{
+  .footer-content a{ 
       padding: 10px;
       font-size: 25px;
+      color: #fff;
   }
-  .footer-content i:hover{
+  .footer-content a:hover{
       color: #434c58;
       cursor: pointer;
   }
